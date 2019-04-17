@@ -21,7 +21,7 @@ CREATE TABLE film
     duree smallint
 		CONSTRAINT chk_duree_cine CHECK (duree >= 0),
     num_real integer 
-			NOT NULL	
+			NULL	
 			CONSTRAINT fk_film_real REFERENCES individu (num_ind)
 );
 
