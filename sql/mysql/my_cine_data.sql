@@ -130,9 +130,9 @@ insert into jouer (num_act, num_film, role) values (20,4, 'Mia Wallace');
 insert into jouer (num_act, num_film, role) values (20,5, 'The Bride');
 insert into jouer (num_act, num_film, role) values (20,6, 'The Bride');
 -- Samuel L Jackson dans les films de QT
-insert into jouer (num_ind, num_film, role) values (6,10, 'Stephen');
-insert into jouer (num_ind, num_film, role) values (6,13, 'Ordell Robbie');
-insert into jouer (num_ind, num_film, role) values (6,9, 'Rufus');
+insert into jouer (num_act, num_film, role) values (6,10, 'Stephen');
+insert into jouer (num_act, num_film, role) values (6,13, 'Ordell Robbie');
+insert into jouer (num_act, num_film, role) values (6,9, 'Rufus');
 -- autres acteurs dans les films de QT
 --insert into jouer (num_ind, num_film, role) values (22,10, 'Django');
 --insert into jouer (num_ind, num_film, role) values (23,10, 'Dr. King Schultz');
