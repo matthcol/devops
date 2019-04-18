@@ -3,7 +3,7 @@
 create database cinema;
 use cinema;
 create user cinema@localhost identified by 'password';
-grant all privileges on cinema to 'cinema'@'localhost';
+grant all privileges on cinema.* to 'cinema'@'localhost';
 flush privileges;
 -- you can reconnect now with user bat : 
 -- 		mysql -u cinema -p cinema
