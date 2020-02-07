@@ -1,0 +1,7 @@
+
+
+# driver JDBC 
+https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/2.5.4/mariadb-java-client-2.5.4.jar
+https://repo1.maven.org/maven2/org/postgresql/postgresql/42.2.10/postgresql-42.2.10.jar
+# JSTL
+https://repo1.maven.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.jar
