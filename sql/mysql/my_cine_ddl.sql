@@ -1,17 +1,17 @@
-DROP TABLE if exists jouer;
-DROP TABLE if exists film;
-DROP TABLE if exists individu;
+DROP TABLE if exists Jouer;
+DROP TABLE if exists Film;
+DROP TABLE if exists Individu;
 
-create table individu(
+create table Individu(
 	num_ind integer auto_increment,
 	nom varchar(50) NOT NULL,
 	prenom varchar(50) NOT NULL,
 	date_naissance date,
 	sexe varchar(1),
-	constraint pk_individu primary key(num_ind)
+	constraint pk_Individu primary key(num_ind)
 );
 
-CREATE TABLE film
+CREATE TABLE Film
 (
     num_film integer auto_increment,
     titre VARCHAR(220) NOT NULL,
@@ -20,18 +20,18 @@ CREATE TABLE film
     duree smallint NULL,
 	synopsis TEXT NULL,
     num_real integer NULL,	
-	CONSTRAINT pk_film PRIMARY KEY(num_film),
-	CONSTRAINT fk_film_real FOREIGN KEY (num_real) 
-			REFERENCES individu (num_ind)
+	CONSTRAINT pk_Film PRIMARY KEY(num_film),
+	CONSTRAINT fk_Film_real FOREIGN KEY (num_real) 
+			REFERENCES Individu (num_ind)
 );
 
-create table jouer(
+create table Jouer(
 	num_act integer NOT NULL,
 	num_film integer NOT NULL,
 	role character varying(50) NOT NULL,
-	constraint fk1_jouer foreign key (num_act) 
-			references individu(num_ind),
-	constraint fk2_jouer foreign key (num_film) 
-			references film(num_film),
-	constraint pk_jouer primary key (num_act,num_film,role)
+	constraint fk1_Jouer foreign key (num_act) 
+			references Individu(num_ind),
+	constraint fk2_Jouer foreign key (num_film) 
+			references Film(num_film),
+	constraint pk_Jouer primary key (num_act,num_film,role)
 );
