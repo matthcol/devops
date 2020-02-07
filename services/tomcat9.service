@@ -1,0 +1,17 @@
+# Systemd unit file for tomcat 9, manually installed
+# 
+# To create clones of this service:
+# DO NOTHING, use tomcat@.service instead.
+
+[Unit]
+Description=Apache Tomcat Web Application Container
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/apache-tomcat-9/bin/startup.sh
+SuccessExitStatus=143
+User=tomcat9
+
+[Install]
+WantedBy=multi-user.target
